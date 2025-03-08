@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.K. ATTA CHAKKI & DEPARTMENTAL STORE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="logo.png" alt="N.K. ATTA CHAKKI">
+                <h1>N.K. ATTA CHAKKI & DEPARTMENTAL STORE</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for a product">
+                <button type="button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-controls">
+                <a href="#" class="location"><i class="fas fa-map-marker-alt"></i></a>
+                <a href="profile.html" class="user"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="https://wa.me/8368373083" class="whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="products" class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="ragi-ka-atta.jpg" alt="Ragi Ka Atta">
+                    <span class="discount-tag">15% off</span>
+                </div>
+                <div class="product-info">
+                    <h3>Ragi Ka Atta</h3>
+                    <div class="price">
+                        <span class="current-price">₹120</span>
+                        <span class="original-price">₹140</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- More product cards will be populated by JavaScript -->
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="profile.html">My Account</a></li>
+                    <li><a href="orders.html">My Orders</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Get In Touch</h3>
+                <p><i class="fas fa-phone"></i> 8368373083</p>
+                <p><i class="fab fa-whatsapp"></i> 8368373083</p>
+                <p><i class="fas fa-map-marker-alt"></i> Ashok vihar Phase-2 Gulabi Market shop number-4</p>
+                <p>New Delhi, Delhi - 110052</p>
+            </div>
+            <div class="footer-section">
+                <h3>Social</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 N.K. ATTA CHAKKI. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

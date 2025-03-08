@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - N.K. ATTA CHAKKI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>N.K. ATTA CHAKKI</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html" class="active">Checkout</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="checkout-section">
+            <div class="checkout-container">
+                <h2>Checkout</h2>
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div id="checkout-items">
+                        <!-- Order items will be populated by JavaScript -->
+                    </div>
+                    <div class="total-amount">
+                        <span>Total Amount:</span>
+                        <span id="total-price">₹0.00</span>
+                    </div>
+                </div>
+                <form id="checkout-form">
+                    <h3>Delivery Information</h3>
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" required readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Delivery Address</label>
+                        <textarea id="address" required readonly></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Order Notes (Optional)</label>
+                        <textarea id="notes"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Payment Method</label>
+                        <div class="payment-options">
+                            <label>
+                                <input type="radio" name="payment-method" value="CASH_ON_DELIVERY" checked>
+                                Cash on Delivery
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Complete Order</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 N.K. ATTA CHAKKI</p>
+    </footer>
+    <script src="orders.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
